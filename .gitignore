@@ -1,0 +1,58 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment and secrets
+.env
+!.env.example
+
+# Tooling caches and coverage
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Generated project data
+data/cache/
+data/exports/
+data/workflow_runs/
+data/workflow_checkpoints.sqlite*
+data/agent_checkpoints.sqlite*
+data/agent_conversations.sqlite*
+
+# Eval / smoke artifacts
+data/deepseek_eval/
+data/deepseek_smoke/
+node_modules
+# Local runtime data
+data/
+
+# Temporary files and caches
+.tmp/
+.tmp*/
+tmp/
+.uv-cache*/
+.test-runtime/
+.codegraph/
+
+# Generated outputs
+outputs/
+output/
+
+# Model weights
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+/无机材料候选筛选plan.docx
