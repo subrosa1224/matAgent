@@ -1,0 +1,34 @@
+{
+  "version": "literature-gold-v1",
+  "documents": [
+    {
+      "document_id": "doc-3250ce3cd68ac48d95b866ae",
+      "domain": "Nb-doped TiO2 photovoltaics",
+      "reference_dossier_items": 12,
+      "reference_legacy_facts": 0,
+      "reference_measurements": 24,
+      "reference_comparisons": 18,
+      "required_findings": ["1.5 mol %", "1.1%", "1.3%"]
+    },
+    {
+      "document_id": "doc-cb4c833fc0948254786473b9",
+      "domain": "mixed-cation perovskite photovoltaics",
+      "reference_dossier_items": 16,
+      "reference_legacy_facts": 0,
+      "reference_measurements": 7,
+      "reference_comparisons": 1,
+      "required_findings": ["PbI2/FAI", "1.05", "20.8%"]
+    },
+    {
+      "document_id": "doc-6be19aada0b95fe176f931ee",
+      "domain": "osteoinductive calcium phosphate bioceramics",
+      "reference_dossier_items": 14,
+      "reference_legacy_facts": 3,
+      "reference_groups": 25,
+      "reference_measurements": 37,
+      "reference_comparisons": 5,
+      "reference_claims": 1,
+      "required_findings": ["70 %", "10.49–10.69", "3.74 × 10−9"]
+    }
+  ]
+}

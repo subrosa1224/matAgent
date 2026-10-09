@@ -1,0 +1,52 @@
+[
+  {
+    "benchmark_role": "seed_evidence_pending_task_specific_comparability_review",
+    "document_id": "doc-3250ce3cd68ac48d95b866ae",
+    "dossier_path": "data/literature_dossiers/doc-3250ce3cd68ac48d95b866ae.json",
+    "dossier_sha256": "b87992ae8fa2f758850fcf869cc6185feaaf59694001098ed18c12de04be7e21",
+    "review_decision": "approved",
+    "review_path": "data/literature_dossier_reviews/doc-3250ce3cd68ac48d95b866ae/dossier-review-e30276ccc1c483427bc2da61.json",
+    "review_sha256": "33fac21cc557552c4b75b88cd50712d1edbaefa90250218f1d154fdc56e151cf",
+    "title": "Improving Interfacial Charge-Transfer Transitions in Nb-Doped TiO2 Electrodes with 7,7,8,8-Tetracyanoquinodimethane"
+  },
+  {
+    "benchmark_role": "seed_evidence_pending_task_specific_comparability_review",
+    "document_id": "doc-6be19aada0b95fe176f931ee",
+    "dossier_path": "data/literature_dossiers/doc-6be19aada0b95fe176f931ee.json",
+    "dossier_sha256": "3db5c5eac9521e350a38fc1dc87a41f59a696f4611ef2af26db6ee8e6e2ce1c0",
+    "review_decision": "approved",
+    "review_path": "data/literature_dossier_reviews/doc-6be19aada0b95fe176f931ee/dossier-review-b3e16dbe358c55e73c47fc44.json",
+    "review_sha256": "6eae001e588d4942317a826b4ca3d5f500e7fb5830482b40bd526487ad193057",
+    "title": "Optimal structural characteristics of osteoinductivity in bioceramics derived from a novel high-throughput screening plus machine learning approach"
+  },
+  {
+    "benchmark_role": "seed_evidence_pending_task_specific_comparability_review",
+    "document_id": "doc-8433c47dfe7828426efe0c59",
+    "dossier_path": "data/literature_dossiers/doc-8433c47dfe7828426efe0c59.json",
+    "dossier_sha256": "172abc55e69343370e84cc211141c8ba8008a37ef7616ded290c3ced3a94e11d",
+    "review_decision": "approved",
+    "review_path": "data/literature_dossier_reviews/doc-8433c47dfe7828426efe0c59/dossier-review-1a732cfef3bcadb02d9228df.json",
+    "review_sha256": "e6fd868610a5809ca3a2b5df51b9d5be35460d2a723402d024e1e532dbd84227",
+    "title": "1-s2.0-S2590006423001278-main"
+  },
+  {
+    "benchmark_role": "seed_evidence_pending_task_specific_comparability_review",
+    "document_id": "doc-cb4c833fc0948254786473b9",
+    "dossier_path": "data/literature_dossiers/doc-cb4c833fc0948254786473b9.json",
+    "dossier_sha256": "dfb1dd5c62c580cd16271b302e036c7adbfff8e68f7bdcddeb3b0a13bb37193c",
+    "review_decision": "approved",
+    "review_path": "data/literature_dossier_reviews/doc-cb4c833fc0948254786473b9/dossier-review-776feece3134f4f46eb18036.json",
+    "review_sha256": "b927ded8b575c11f5b4d84c97602592e2aa9cb543d4165201697c6f217a7564c",
+    "title": "Efficient luminescent solar cells based on tailored mixed-cation perovskites"
+  },
+  {
+    "benchmark_role": "seed_evidence_pending_task_specific_comparability_review",
+    "document_id": "doc-ed7f2da942310a8e026086fc",
+    "dossier_path": "data/literature_dossiers/doc-ed7f2da942310a8e026086fc.json",
+    "dossier_sha256": "51b0c1823f1d6923902a80b05d00be3e9d470e66452fc8aab76c57c567d381a0",
+    "review_decision": "approved",
+    "review_path": "data/literature_dossier_reviews/doc-ed7f2da942310a8e026086fc/dossier-review-557149f6407f47bb3062d840.json",
+    "review_sha256": "083a5ad20b425862874a0e5e31e44a264a4f37be3cf7c99026018daca570e33c",
+    "title": "fbioe-11-1260639"
+  }
+]

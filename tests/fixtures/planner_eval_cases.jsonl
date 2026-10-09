@@ -1,0 +1,3 @@
+{"id": "ready_case", "query": "ready query", "expected_status": "ready", "expected_request": {"limit": 10}, "expected_ambiguity_codes": [], "expected_conflict_codes": [], "tags": ["mock_fixture"]}
+{"id": "invalid_case", "query": "invalid query", "expected_status": "invalid", "expected_request": {}, "expected_ambiguity_codes": [], "expected_conflict_codes": ["required_and_excluded_element"], "tags": ["mock_fixture"]}
+{"id": "timeout_case", "query": "timeout query", "expected_status": "ready", "expected_request": {}, "expected_ambiguity_codes": [], "expected_conflict_codes": [], "tags": ["mock_fixture"]}

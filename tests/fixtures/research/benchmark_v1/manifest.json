@@ -1,0 +1,36 @@
+{
+  "approved_seed_dossier_count": 5,
+  "assets": {
+    "database_snapshot": {
+      "path": "tests/fixtures/research/benchmark_v1/database_snapshots/materials_project_oxide_300.jsonl",
+      "sha256": "a7bc85fd656233fbf03e4d42f71d20fbb9bee5187003893542d3ff1ab93ff62a"
+    },
+    "end_to_end_tasks": "end_to_end_tasks/tasks.json",
+    "identity_cases": "identity_cases/cases.json",
+    "literature_candidates": "literature_evidence/candidates.json",
+    "literature_index": "literature_evidence/index.json",
+    "screening_cases": "screening_cases/cases.json",
+    "screening_expected": "expected/screening_expected.json"
+  },
+  "benchmark_id": "crystalline-inorganic-benchmark-v1",
+  "domain_review_required": true,
+  "end_to_end_task_count": 3,
+  "generated_from_existing_snapshots": true,
+  "gold_status": "pending_domain_review",
+  "identity_case_count": 20,
+  "known_gaps": [
+    "Five approved seed dossiers and three task-specific local PDF silver dossiers are registered; the three silver dossiers still require domain approval before the eight-dossier gold gate is met.",
+    "Ten same-formula/different-space-group identity labels require domain review.",
+    "All three end-to-end task answer keys require domain approval.",
+    "Tasks B and C still require task-specific approved literature evidence.",
+    "The frozen 300-record slice is oxide-heavy and does not establish full crystalline-inorganic generalization.",
+    "Repository-wide Ruff and mypy gates have pre-existing failures outside the RA-0 files; the full offline pytest gate passes."
+  ],
+  "minimum_approved_dossiers": 8,
+  "pending_task_specific_literature_count": 3,
+  "phase": "RA-0A",
+  "ra1_development_allowed": true,
+  "record_count": 300,
+  "screening_case_count": 15,
+  "status": "conditional_silver_baseline"
+}

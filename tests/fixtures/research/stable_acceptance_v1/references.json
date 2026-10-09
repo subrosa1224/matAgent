@@ -1,0 +1,85 @@
+{
+  "status": "source_checked_silver_pending_second_review",
+  "usage": "仅供独立验收；不得传给Agent、用于填写生产实验矩阵或替代自动提取。页码是PDF物理页，1起始。条件不完整的记录不得进入比较。",
+  "bundles": {
+    "uv_device": {
+      "asset": "uv",
+      "sample": "monolayer graphene film/ZnO nanorod array Schottky junction",
+      "records": [
+        {"id": "uv_R", "sample": "graphene/ZnO NR device", "property": "responsivity", "value": 113, "unit": "A/W", "pages": [4, 5], "conditions": {"wavelength_nm": 365, "bias_v": -1}, "location": "p4正文；p5 Table 1本研究行；不是其他文献行"},
+        {"id": "uv_G", "sample": "graphene/ZnO NR device", "property": "photoconductive_gain", "value": 385, "unit": "1", "pages": [4, 5], "conditions": {"wavelength_nm": 365, "bias_v": -1}, "location": "p4正文；p5 Table 1本研究行；重复出现只计一次"}
+      ],
+      "warnings": ["p4正文测试偏压写-1 V；p5 Figure 4(b)图内标-5 V、图注光强100 μW/cm²。不得将图条件无解释合并到正文R/G记录。", "p5正文先称下降/上升0.7/3.6 ms，但Table 1及另段写上升/下降0.7/3.6 ms。时间对应关系冲突，隔离该指标。", "可见光响应时间以秒计，不能混入UV毫秒记录。", "器件异质结性能不能赋给MP纯ZnO结构。"]
+    },
+    "photo_all": {
+      "asset": "photo",
+      "shared_conditions": {"pollutant": "tetracycline", "lamp": "xenon lamp, 420 nm cutoff filter", "catalyst_mg": 20, "solution_ml": 100, "concentration_mg_l": 20, "dark_equilibration_h": 1, "irradiation_min": 180},
+      "condition_pages": [3, 9],
+      "records": [
+        {"id": "photo_gcn", "sample": "g-C3N4", "property": "degradation", "value": 25.3, "unit": "%", "pages": [9]},
+        {"id": "photo_la", "sample": "LaVO4", "property": "degradation", "value": 32.8, "unit": "%", "pages": [9]},
+        {"id": "photo_gd", "sample": "GdVO4", "property": "degradation", "value": 51.0, "unit": "%", "pages": [9]},
+        {"id": "photo_la10", "sample": "10% LaVO4/g-C3N4", "property": "degradation", "value": 63.2, "unit": "%", "pages": [9]},
+        {"id": "photo_la20", "sample": "20% LaVO4/g-C3N4", "property": "degradation", "value": 79.1, "unit": "%", "pages": [9]},
+        {"id": "photo_la30", "sample": "30% LaVO4/g-C3N4", "property": "degradation", "value": 69.8, "unit": "%", "pages": [9]},
+        {"id": "photo_la40", "sample": "40% LaVO4/g-C3N4", "property": "degradation", "value": 53.6, "unit": "%", "pages": [9]},
+        {"id": "photo_la50", "sample": "50% LaVO4/g-C3N4", "property": "degradation", "value": 52.4, "unit": "%", "pages": [9]},
+        {"id": "photo_gd10", "sample": "10% GdVO4/g-C3N4", "property": "degradation", "value": 68.0, "unit": "%", "pages": [9]},
+        {"id": "photo_gd20", "sample": "20% GdVO4/g-C3N4", "property": "degradation", "value": 73.4, "unit": "%", "pages": [9]},
+        {"id": "photo_gd30", "sample": "30% GdVO4/g-C3N4", "property": "degradation", "value": 82.4, "unit": "%", "pages": [9]},
+        {"id": "photo_gd40", "sample": "40% GdVO4/g-C3N4", "property": "degradation", "value": 91.0, "unit": "%", "pages": [9]},
+        {"id": "photo_gd50", "sample": "50% GdVO4/g-C3N4", "property": "degradation", "value": 84.9, "unit": "%", "pages": [9]}
+      ],
+      "warnings": ["Table 1及Figure 7，非曲线估读；356 nm是分析检测波长，不是光照波长。", "负载比例不是降解率，复合样品不得改称MP纯相。", "只验收降解率，动力学系数若使用需另查原文一致性。"]
+    },
+    "photo_gd": {"extends": "photo_all", "record_ids": ["photo_gd", "photo_gd10", "photo_gd20", "photo_gd30", "photo_gd40", "photo_gd50"]},
+    "battery_conditions": {
+      "asset": "battery",
+      "sample": "150°C α-LiFeO2",
+      "shared_conditions": {"calcination_c": 150, "calcination_h": 6, "voltage_window_v": [1.5, 4.8], "negative_electrode": "Li foil"},
+      "condition_pages": [2, 3, 6, 10],
+      "records": [
+        {"id": "battery_after50", "sample": "150°C α-LiFeO2", "property": "discharge_capacity", "value": 194.5, "unit": "mAh/g", "pages": [6], "conditions": {"rate_c": 0.1, "cycle": 50}},
+        {"id": "battery_initial02", "sample": "150°C α-LiFeO2", "property": "initial_discharge_capacity", "value": 216.6, "unit": "mAh/g", "pages": [6], "conditions": {"rate_c": 0.2, "cycle": 1}},
+        {"id": "battery_initial05", "sample": "150°C α-LiFeO2", "property": "initial_discharge_capacity", "value": 171.5, "unit": "mAh/g", "pages": [6], "conditions": {"rate_c": 0.5, "cycle": 1}},
+        {"id": "battery_retention01", "sample": "150°C α-LiFeO2", "property": "capacity_retention", "value": 87.1, "unit": "%", "pages": [6], "conditions": {"rate_c": 0.1, "cycle": 50, "baseline": "initial capacity"}},
+        {"id": "battery_retention02", "sample": "150°C α-LiFeO2", "property": "capacity_retention", "value": 77.3, "unit": "%", "pages": [6, 10], "conditions": {"rate_c": 0.2, "cycle": 50, "baseline": "initial capacity"}},
+        {"id": "battery_retention05", "sample": "150°C α-LiFeO2", "property": "capacity_retention", "value": 84.5, "unit": "%", "pages": [6, 10], "conditions": {"rate_c": 0.5, "cycle": 50, "baseline": "initial capacity"}}
+      ],
+      "conflicts": [
+        {"property": "initial_discharge_capacity", "values": [{"value": 223.2, "unit": "mAh/g", "page": 1}, {"value": 223.3, "unit": "mAh/g", "pages": [6, 10]}], "action": "保留差异，隔离冲突指标；不得平均或计作重复实验"},
+        {"property": "calcination_atmosphere", "values": [{"value": "argon", "page": 2}, {"value": "N2", "page": 3}], "action": "方法与示意图不一致，需标注"}
+      ],
+      "warnings": ["96.9%保持率以最初五圈下降后的阶段为基准，不等于首圈到50圈的87.1%。", "350°C样品包含LiFe5O8杂相；物相不能仅靠同化学式关联MP编号。", "全文参考文献标题和引言前人80、135 mAh/g不是本文实验。", "容量指标不能按倍率或循环次数混合求均值，也不能用缺失的其他温度容量补造温度趋势。"]
+    },
+    "epsilon_magnetic": {
+      "asset": "epsilon",
+      "records": [
+        {"id": "epsilon_hc", "sample": "optimized undoped ε-Fe2O3", "property": "coercivity", "value": 22.4, "unit": "kOe", "pages": [3], "conditions": {"calcination_c": 1180, "calcination_h": 4, "atmosphere": "air", "fe_si_ratio": 0.4}},
+        {"id": "epsilon_m5t", "sample": "optimized undoped ε-Fe2O3", "property": "magnetization_at_5T", "value": 14.3, "unit": "emu/g", "pages": [3], "conditions": {"field_t": 5.0, "calcination_c": 1180, "calcination_h": 4, "fe_si_ratio": 0.4}}
+      ],
+      "warnings": ["5T磁化值不是饱和磁化。", "后续Ga系列x=0对照22.3 kOe、14.2 emu/g与本组22.4、14.3不同，不混成重复。", "同Fe2O3化学式不代表全部数据库结构属于ε相。"]
+    },
+    "epsilon_phase": {
+      "asset": "epsilon",
+      "records": [
+        {"id": "epsilon_moss", "sample": "1180°C ε-Fe2O3 sample", "property": "epsilon_fraction_mossbauer", "value": 92.7, "unit": "%", "pages": [3], "conditions": {"calcination_c": 1180, "calcination_h": 4, "fe_si_ratio": 0.4, "method": "Mössbauer"}},
+        {"id": "epsilon_alpha", "sample": "1180°C ε-Fe2O3 sample", "property": "alpha_fraction_mossbauer", "value": 7.3, "unit": "%", "pages": [3], "conditions": {"calcination_c": 1180, "calcination_h": 4, "fe_si_ratio": 0.4, "method": "Mössbauer"}},
+        {"id": "epsilon_1240", "sample": "1240°C iron oxide sample", "property": "epsilon_fraction_xrd", "value": 59.4, "unit": "wt%", "pages": [2], "conditions": {"calcination_c": 1240, "calcination_h": 4, "fe_si_ratio": 0.4, "method": "XRD/Rietveld"}}
+      ],
+      "warnings": ["1180°C XRD近100wt%与Mössbauer92.7%/7.3%测量方法不同，不合并为普适纯度。", "930°C描述为γ相；1240°C还含40.6wt%α相。", "硅基限域前驱体不能冒充纯Fe2O3数据库结构。"]
+    },
+    "epsilon_resonance": {
+      "asset": "epsilon",
+      "shared_conditions": {"material": "ε-GaxFe2-xO3 powder/TPU composite film", "powder_tpu_mass_ratio": "8:2", "nominal_frequency_window_ghz": [60, 110]},
+      "condition_pages": [3, 4],
+      "records": [
+        {"id": "epsilon_fr024", "sample": "x=0.24 TPU composite film", "property": "author_reported_resonance_frequency", "value": 105, "unit": "GHz", "pages": [3], "conditions": {"ga_x": 0.24}, "warning": "p4 Figure 3图注称x=0.24峰超出测量范围，不能无条件当作完整测得峰"},
+        {"id": "epsilon_fr032", "sample": "x=0.32 TPU composite film", "property": "resonance_frequency", "value": 93, "unit": "GHz", "pages": [3], "conditions": {"ga_x": 0.32}},
+        {"id": "epsilon_fr042", "sample": "x=0.42 TPU composite film", "property": "resonance_frequency", "value": 82, "unit": "GHz", "pages": [3], "conditions": {"ga_x": 0.42}},
+        {"id": "epsilon_fr048", "sample": "x=0.48 TPU composite film", "property": "resonance_frequency", "value": 71, "unit": "GHz", "pages": [3], "conditions": {"ga_x": 0.48}}
+      ],
+      "warnings": ["四个数值需连同x=0.24测量边界核对；带冲突标记的作者报告值可作为记录，但不得进入无条件定量排名。", "未掺杂Fe2O3、Ga取代粉体、TPU膜是三种不同角色；不得把膜共振归给MP纯Fe2O3。"]
+    }
+  }
+}

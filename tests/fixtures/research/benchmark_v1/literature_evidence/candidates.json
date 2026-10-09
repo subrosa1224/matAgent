@@ -1,0 +1,64 @@
+[
+  {
+    "article_url": "https://pubs.rsc.org/en/content/articlelanding/2022/cc/d2cc03168j",
+    "candidate_id": "lit-candidate-001",
+    "document_id": "doc-6ad70e05bae3bc89071b86f6",
+    "doi": "10.1039/D2CC03168J",
+    "dossier_candidate_path": "data/literature_dossier_candidates/doc-6ad70e05bae3bc89071b86f6.json",
+    "dossier_candidate_sha256": "e90304a62b54104132f4abc00e2ba9324d8aea90b3eb65d36e267cf2bdcce0b7",
+    "evidence_role": "phase_specific_experimental_synthesis",
+    "local_pdf_path": "data/literature_pdfs/ra0/Facile synthesis of epsilon iron oxides via spray.pdf",
+    "material_scope": "epsilon-Fe2O3 embedded in silica-derived particles",
+    "open_full_text_url": "https://pubs.rsc.org/en/content/articlepdf/2022/cc/d2cc03168j",
+    "pdf_sha256": "6ad70e05bae3bc89071b86f6c4a6385bc40661c142ff7023d80f7a44a94f5ce5",
+    "publisher": "Royal Society of Chemistry",
+    "review_status": "pending_domain_review",
+    "screening_note": "出版社标记为开放获取；论文报告了制备高纯度 ε-Fe2O3 的喷雾干燥路线。材料身份、物相比例、退火条件和可比性仍需逐页建档并审核。",
+    "task_ids": [
+      "e2e-b-polymorphs",
+      "e2e-c-metastable-synthesized"
+    ],
+    "title": "Facile synthesis of epsilon iron oxides via spray drying for millimeter-wave absorption"
+  },
+  {
+    "article_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4606832/",
+    "candidate_id": "lit-candidate-002",
+    "document_id": "doc-0d6948f7c916bf1b22b8a8da",
+    "doi": "10.1038/srep15091",
+    "dossier_candidate_path": "data/literature_dossier_candidates/doc-0d6948f7c916bf1b22b8a8da.json",
+    "dossier_candidate_sha256": "589bbc2f10c880ccbac3c85fff752d307f0b926cc0eb7ba18353dab9adae1e5a",
+    "evidence_role": "phase_specific_high_pressure_synthesis",
+    "local_pdf_path": "data/literature_pdfs/ra0/Zeta-Fe2O3 – A new stable.pdf",
+    "material_scope": "zeta-Fe2O3 formed from beta-Fe2O3 under pressure",
+    "open_full_text_url": "https://www.nature.com/articles/srep15091.pdf",
+    "pdf_sha256": "0d6948f7c916bf1b22b8a8da296a0f259898a321ab457f33325b88fd1679e949",
+    "publisher": "Scientific Reports",
+    "review_status": "pending_domain_review",
+    "screening_note": "开放全文报告了一种在 30 GPa 以上形成、卸压后仍保留的单斜 Fe2O3 相。高压路线、纳米前驱体和物相指认必须在结论中明确保留。",
+    "task_ids": [
+      "e2e-b-polymorphs",
+      "e2e-c-metastable-synthesized"
+    ],
+    "title": "Zeta-Fe2O3 - A new stable polymorph in iron(III) oxide family"
+  },
+  {
+    "article_url": "https://www.nature.com/articles/s41467-018-06682-4",
+    "candidate_id": "lit-candidate-003",
+    "document_id": "doc-1aaf9c5dc3ca695ba39785d4",
+    "doi": "10.1038/s41467-018-06682-4",
+    "dossier_candidate_path": "data/literature_dossier_candidates/doc-1aaf9c5dc3ca695ba39785d4.json",
+    "dossier_candidate_sha256": "f87c8b39b3b1f93ffe57847161a69b503f5e6df0b1534bce314fc0af332be546",
+    "evidence_role": "cross_material_metastability_boundary",
+    "local_pdf_path": "data/literature_pdfs/ra0/s41467-018-06682-4.pdf",
+    "material_scope": "ICSD-linked inorganic crystalline solids",
+    "open_full_text_url": "https://www.nature.com/articles/s41467-018-06682-4.pdf",
+    "pdf_sha256": "1aaf9c5dc3ca695ba39785d40005888734d5fe69b411cb05562443704d308eae",
+    "publisher": "Nature Communications",
+    "review_status": "pending_domain_review",
+    "screening_note": "这是跨材料边界证据：部分实验已实现结构在 0 K 计算中位于凸包之上；它不能单独证明某个具体数据库候选已经被合成。",
+    "task_ids": [
+      "e2e-c-metastable-synthesized"
+    ],
+    "title": "Physical descriptor for the Gibbs energy of inorganic crystalline solids and temperature-dependent materials chemistry"
+  }
+]

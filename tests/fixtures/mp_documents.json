@@ -1,0 +1,250 @@
+[
+  {
+    "material_id": "mp-1",
+    "formula_pretty": "LiFeO2",
+    "elements": ["O", "Fe", "Li"],
+    "chemsys": "Fe-Li-O",
+    "band_gap": 2.1,
+    "energy_above_hull": 0.01,
+    "formation_energy_per_atom": -1.5,
+    "density": 5.2,
+    "is_metal": false,
+    "is_gap_direct": true,
+    "is_stable": true,
+    "theoretical": false,
+    "deprecated": false,
+    "symmetry": {
+      "crystal_system": "Trigonal",
+      "symbol": "R-3c",
+      "number": 167
+    },
+    "structure": {
+      "@module": "pymatgen.core.structure",
+      "@class": "Structure",
+      "charge": 0.0,
+      "lattice": {
+        "matrix": [
+          [5.0, 0.0, 0.0],
+          [0.0, 5.0, 0.0],
+          [0.0, 0.0, 5.0]
+        ],
+        "pbc": [true, true, true],
+        "a": 5.0,
+        "b": 5.0,
+        "c": 5.0,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0,
+        "volume": 125.0
+      },
+      "properties": {},
+      "sites": [
+        {
+          "species": [{"element": "Fe", "occu": 1}],
+          "abc": [0.0, 0.0, 0.0],
+          "properties": {},
+          "label": "Fe",
+          "xyz": [0.0, 0.0, 0.0]
+        },
+        {
+          "species": [{"element": "O", "occu": 1}],
+          "abc": [0.5, 0.5, 0.5],
+          "properties": {},
+          "label": "O",
+          "xyz": [2.5, 2.5, 2.5]
+        }
+      ]
+    }
+  },
+  {
+    "material_id": "mp-2",
+    "formula_pretty": "Fe2O3",
+    "elements": ["Fe", "O"],
+    "chemsys": "Fe-O",
+    "band_gap": 2.0,
+    "energy_above_hull": 0.02,
+    "formation_energy_per_atom": -1.6,
+    "density": 5.3,
+    "is_metal": false,
+    "is_gap_direct": true,
+    "is_stable": true,
+    "theoretical": false,
+    "deprecated": false,
+    "symmetry": {
+      "crystal_system": "Trigonal",
+      "symbol": "R-3c",
+      "number": 167
+    },
+    "structure": null
+  },
+  {
+    "material_id": "mp-3",
+    "formula_pretty": "TiO2",
+    "elements": ["Ti", "O"],
+    "chemsys": "O-Ti",
+    "band_gap": null,
+    "energy_above_hull": 0.0,
+    "formation_energy_per_atom": null,
+    "density": null,
+    "is_metal": false,
+    "is_gap_direct": true,
+    "is_stable": true,
+    "theoretical": false,
+    "deprecated": false,
+    "symmetry": {
+      "crystal_system": "Tetragonal",
+      "symbol": "P4/mmm",
+      "number": 123
+    },
+    "structure": {
+      "@module": "pymatgen.core.structure",
+      "@class": "Structure",
+      "charge": 0.0,
+      "lattice": {
+        "matrix": [
+          [4.6, 0.0, 0.0],
+          [0.0, 4.6, 0.0],
+          [0.0, 0.0, 2.9]
+        ],
+        "pbc": [true, true, true],
+        "a": 4.6,
+        "b": 4.6,
+        "c": 2.9,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0,
+        "volume": 61.364
+      },
+      "properties": {},
+      "sites": [
+        {
+          "species": [{"element": "Ti", "occu": 1}],
+          "abc": [0.0, 0.0, 0.0],
+          "properties": {},
+          "label": "Ti",
+          "xyz": [0.0, 0.0, 0.0]
+        },
+        {
+          "species": [{"element": "O", "occu": 1}],
+          "abc": [0.5, 0.5, 0.5],
+          "properties": {},
+          "label": "O",
+          "xyz": [2.3, 2.3, 1.45]
+        }
+      ]
+    }
+  },
+  {
+    "material_id": "mp-4",
+    "formula_pretty": "Cu",
+    "elements": ["Cu"],
+    "chemsys": "Cu",
+    "band_gap": 0.0,
+    "energy_above_hull": 0.0,
+    "formation_energy_per_atom": 0.0,
+    "density": 8.9,
+    "is_metal": true,
+    "is_gap_direct": false,
+    "is_stable": true,
+    "theoretical": false,
+    "deprecated": false,
+    "symmetry": {
+      "crystal_system": "Cubic",
+      "symbol": "Fm-3m",
+      "number": 225
+    },
+    "structure": {
+      "@module": "pymatgen.core.structure",
+      "@class": "Structure",
+      "charge": 0.0,
+      "lattice": {
+        "matrix": [
+          [3.6, 0.0, 0.0],
+          [0.0, 3.6, 0.0],
+          [0.0, 0.0, 3.6]
+        ],
+        "pbc": [true, true, true],
+        "a": 3.6,
+        "b": 3.6,
+        "c": 3.6,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0,
+        "volume": 46.656
+      },
+      "properties": {},
+      "sites": [
+        {
+          "species": [{"element": "Cu", "occu": 1}],
+          "abc": [0.0, 0.0, 0.0],
+          "properties": {},
+          "label": "Cu",
+          "xyz": [0.0, 0.0, 0.0]
+        }
+      ]
+    }
+  },
+  {
+    "material_id": "mp-5",
+    "formula_pretty": "PbS",
+    "elements": ["Pb", "S"],
+    "chemsys": "Pb-S",
+    "band_gap": 0.4,
+    "energy_above_hull": 0.5,
+    "formation_energy_per_atom": -0.8,
+    "density": 7.6,
+    "is_metal": false,
+    "is_gap_direct": true,
+    "is_stable": false,
+    "theoretical": false,
+    "deprecated": true,
+    "symmetry": {
+      "crystal_system": "Cubic",
+      "symbol": "Fm-3m",
+      "number": 225
+    },
+    "structure": null
+  },
+  {
+    "material_id": "mp-6",
+    "formula_pretty": "Si",
+    "elements": ["Si"],
+    "chemsys": "Si",
+    "band_gap": 1.1,
+    "energy_above_hull": 0.03,
+    "formation_energy_per_atom": -1.2,
+    "density": 2.3,
+    "is_metal": false,
+    "is_gap_direct": false,
+    "is_stable": true,
+    "theoretical": true,
+    "deprecated": false,
+    "symmetry": {
+      "crystal_system": "Cubic",
+      "symbol": "Fd-3m",
+      "number": 227
+    },
+    "structure": null
+  },
+  {
+    "material_id": "mp-8",
+    "formula_pretty": "GaAs",
+    "elements": ["Ga", "As"],
+    "chemsys": "As-Ga",
+    "band_gap": 1.4,
+    "energy_above_hull": null,
+    "formation_energy_per_atom": -1.1,
+    "density": 5.3,
+    "is_metal": false,
+    "is_gap_direct": true,
+    "is_stable": true,
+    "theoretical": false,
+    "deprecated": false,
+    "symmetry": {
+      "crystal_system": "Cubic",
+      "symbol": "F-43m",
+      "number": 216
+    },
+    "structure": null
+  }
+]

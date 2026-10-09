@@ -1,0 +1,177 @@
+[
+  {
+    "case_id": "identity-001",
+    "expected_relationship": "same_source_material_id",
+    "left_material_id": "mp-1005792",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1005792"
+  },
+  {
+    "case_id": "identity-002",
+    "expected_relationship": "same_source_material_id",
+    "left_material_id": "mp-1008500",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1008500"
+  },
+  {
+    "case_id": "identity-003",
+    "expected_relationship": "same_source_material_id",
+    "left_material_id": "mp-1008807",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1008807"
+  },
+  {
+    "case_id": "identity-004",
+    "expected_relationship": "same_source_material_id",
+    "left_material_id": "mp-1008813",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1008813"
+  },
+  {
+    "case_id": "identity-005",
+    "expected_relationship": "same_source_material_id",
+    "left_material_id": "mp-1008866",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1008866"
+  },
+  {
+    "case_id": "identity-006",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "AgO",
+    "left_material_id": "mp-1079720",
+    "left_spacegroup": 14,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-1065190",
+    "right_spacegroup": 15
+  },
+  {
+    "case_id": "identity-007",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "Al11TlO17",
+    "left_material_id": "mp-758571",
+    "left_spacegroup": 40,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-2206289",
+    "right_spacegroup": 194
+  },
+  {
+    "case_id": "identity-008",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "BaO",
+    "left_material_id": "mp-1178531",
+    "left_spacegroup": 57,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-776658",
+    "right_spacegroup": 63
+  },
+  {
+    "case_id": "identity-009",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "CaO",
+    "left_material_id": "mp-1079707",
+    "left_spacegroup": 64,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-1064492",
+    "right_spacegroup": 139
+  },
+  {
+    "case_id": "identity-010",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "CrO",
+    "left_material_id": "mp-1178414",
+    "left_spacegroup": 6,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-2039648",
+    "right_spacegroup": 10
+  },
+  {
+    "case_id": "identity-011",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "CsLiO",
+    "left_material_id": "mp-1178393",
+    "left_spacegroup": 62,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-1178395",
+    "right_spacegroup": 139
+  },
+  {
+    "case_id": "identity-012",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "CuO",
+    "left_material_id": "mp-1064456",
+    "left_spacegroup": 66,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-1147768",
+    "right_spacegroup": 123
+  },
+  {
+    "case_id": "identity-013",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "Fe2O3",
+    "left_material_id": "mp-1244869",
+    "left_spacegroup": 1,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-715572",
+    "right_spacegroup": 5
+  },
+  {
+    "case_id": "identity-014",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "FeO",
+    "left_material_id": "mp-1974703",
+    "left_spacegroup": 2,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-1178239",
+    "right_spacegroup": 9
+  },
+  {
+    "case_id": "identity-015",
+    "expected_relationship": "same_formula_different_phase",
+    "formula": "InO",
+    "left_material_id": "mp-1184809",
+    "left_spacegroup": 186,
+    "review_status": "pending_domain_review",
+    "right_material_id": "mp-2646987",
+    "right_spacegroup": 187
+  },
+  {
+    "case_id": "identity-016",
+    "chemsys": "Ac-O",
+    "expected_relationship": "same_chemsys_only",
+    "left_material_id": "mp-11107",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1183172"
+  },
+  {
+    "case_id": "identity-017",
+    "chemsys": "Al-B-O",
+    "expected_relationship": "same_chemsys_only",
+    "left_material_id": "mp-31408",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1229135"
+  },
+  {
+    "case_id": "identity-018",
+    "chemsys": "Al-O-Pb",
+    "expected_relationship": "same_chemsys_only",
+    "left_material_id": "mp-21892",
+    "review_status": "deterministic",
+    "right_material_id": "mp-13875"
+  },
+  {
+    "case_id": "identity-019",
+    "chemsys": "Al-O-Si-Tl",
+    "expected_relationship": "same_chemsys_only",
+    "left_material_id": "mp-1228177",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1228209"
+  },
+  {
+    "case_id": "identity-020",
+    "chemsys": "As-Ba-O",
+    "expected_relationship": "same_chemsys_only",
+    "left_material_id": "mp-1105233",
+    "review_status": "deterministic",
+    "right_material_id": "mp-1194732"
+  }
+]

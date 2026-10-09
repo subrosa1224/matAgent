@@ -1,0 +1,142 @@
+{
+  "baseline_kind": "existing_implementation_before_ra1",
+  "benchmark_id": "crystalline-inorganic-benchmark-v1",
+  "cases": [
+    {
+      "actual_match_count": 83,
+      "case_id": "screen-001",
+      "expected_match_count": 83,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 22,
+      "case_id": "screen-002",
+      "expected_match_count": 22,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "case_id": "screen-003",
+      "filter_exact": false,
+      "status": "unsupported",
+      "task_specific_sort_supported": false,
+      "unsupported_constraints": [
+        "is_gap_direct"
+      ]
+    },
+    {
+      "actual_match_count": 58,
+      "case_id": "screen-004",
+      "expected_match_count": 58,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 100,
+      "case_id": "screen-005",
+      "expected_match_count": 100,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 102,
+      "case_id": "screen-006",
+      "expected_match_count": 102,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 42,
+      "case_id": "screen-007",
+      "expected_match_count": 42,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 58,
+      "case_id": "screen-008",
+      "expected_match_count": 58,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 4,
+      "case_id": "screen-009",
+      "expected_match_count": 4,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 130,
+      "case_id": "screen-010",
+      "expected_match_count": 130,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 145,
+      "case_id": "screen-011",
+      "expected_match_count": 145,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 135,
+      "case_id": "screen-012",
+      "expected_match_count": 135,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 0,
+      "case_id": "screen-013",
+      "expected_match_count": 0,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 103,
+      "case_id": "screen-014",
+      "expected_match_count": 103,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    },
+    {
+      "actual_match_count": 26,
+      "case_id": "screen-015",
+      "expected_match_count": 26,
+      "filter_exact": true,
+      "status": "evaluated",
+      "task_specific_sort_supported": false
+    }
+  ],
+  "end_to_end_task_count": 3,
+  "end_to_end_tasks_completed": 0,
+  "explanations": [
+    "The current FilterService is evaluated only for constraints it represents exactly.",
+    "is_gap_direct is present on records but is not an existing ScreeningRequest hard filter.",
+    "The current RankingService uses a fixed semiconductor score and does not implement each benchmark case's explicit sort contract.",
+    "No project-level identity resolver or end-to-end ScreeningOrchestrator exists before RA-1/RA-3."
+  ],
+  "filter_cases_evaluated": 14,
+  "filter_cases_exact": 14,
+  "filter_exact_rate": 1.0,
+  "identity_relationship_cases_supported": 0,
+  "screening_case_count": 15,
+  "task_specific_ranking_cases_supported": 0,
+  "unsupported_filter_cases": 1
+}
