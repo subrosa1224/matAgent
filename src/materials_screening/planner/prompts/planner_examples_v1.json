@@ -1,0 +1,72 @@
+[
+  {
+    "query": "寻找不含 Pb、Cd、Hg，带隙 1.2 到 2.0 eV，能量高于凸包小于 50 meV/atom 的非金属材料，返回 10 个",
+    "draft": {
+      "status": "extracted",
+      "required_elements": [],
+      "excluded_elements": ["Cd", "Hg", "Pb"],
+      "chemsys": null,
+      "formula": null,
+      "band_gap_min": 1.2,
+      "band_gap_max": 2.0,
+      "band_gap_unit": "eV",
+      "hull_min": 0.0,
+      "hull_max": 0.05,
+      "hull_unit": "eV/atom",
+      "density_min": null,
+      "density_max": null,
+      "density_unit": "unspecified",
+      "crystal_system": null,
+      "spacegroup_numbers": [],
+      "is_metal": false,
+      "is_stable": null,
+      "theoretical": null,
+      "target_band_gap": null,
+      "target_band_gap_unit": "unspecified",
+      "limit": 10,
+      "ambiguities": [],
+      "unsupported_requirements": [],
+      "conflicts": [],
+      "assumptions": [],
+      "clarification_question": "",
+      "evidence": [
+        {
+          "quote": "带隙 1.2 到 2.0 eV"
+        }
+      ]
+    }
+  },
+  {
+    "query": "预测一种新的光伏材料",
+    "draft": {
+      "status": "extracted",
+      "required_elements": [],
+      "excluded_elements": [],
+      "chemsys": null,
+      "formula": null,
+      "band_gap_min": null,
+      "band_gap_max": null,
+      "band_gap_unit": "unspecified",
+      "hull_min": null,
+      "hull_max": null,
+      "hull_unit": "unspecified",
+      "density_min": null,
+      "density_max": null,
+      "density_unit": "unspecified",
+      "crystal_system": null,
+      "spacegroup_numbers": [],
+      "is_metal": null,
+      "is_stable": null,
+      "theoretical": null,
+      "target_band_gap": null,
+      "target_band_gap_unit": "unspecified",
+      "limit": null,
+      "ambiguities": [],
+      "unsupported_requirements": ["predict_materials"],
+      "conflicts": [],
+      "assumptions": [],
+      "clarification_question": "",
+      "evidence": []
+    }
+  }
+]
