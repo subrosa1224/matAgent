@@ -320,6 +320,13 @@ def requests_fulltext_resume(message: str) -> bool:
             normalized,
         )
         is not None
+        or re.match(
+            r"(?:请\s*)?(?:确认|开始)\s*(?:详细分析|深度分析|分析)\s*"
+            r"(?:已\s*)?上传的\s*[\d零〇一二三四五六七八九十两]+\s*篇\s*"
+            r"(?:全文|论文|文献|pdf)(?=$|[。；;，,！!\s])",
+            normalized,
+        )
+        is not None
         or re.search(
             r"第\s*[\d零〇一二三四五六七八九十两]+(?:\s*[、,，和及]\s*(?:第\s*)?[\d零〇一二三四五六七八九十两]+)*\s*篇|"
             r"这些(?:论文|文献|pdf)|上传的(?:论文|文献|pdf)|"

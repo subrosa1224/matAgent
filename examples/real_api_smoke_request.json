@@ -1,0 +1,22 @@
+{
+  "required_elements": [],
+  "excluded_elements": ["Pb", "Cd", "Hg"],
+  "chemsys": null,
+  "formula": "Si",
+  "band_gap_ev": {
+    "min": 0.5,
+    "max": 1.2
+  },
+  "energy_above_hull_ev_atom": {
+    "min": 0.0,
+    "max": 0.05
+  },
+  "density_g_cm3": null,
+  "crystal_system": null,
+  "spacegroup_numbers": [],
+  "is_metal": false,
+  "is_stable": null,
+  "theoretical": null,
+  "target_band_gap_ev": 0.85,
+  "limit": 10
+}

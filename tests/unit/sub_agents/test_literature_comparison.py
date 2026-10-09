@@ -170,7 +170,7 @@ def test_matrix_rejects_forged_hash_pages_and_units() -> None:
             groups=(group.model_copy(update={"source_text_sha256": "b" * 64}),),
             measurements=(measurement,),
         )
-    with pytest.raises(ValueError, match="unit or uncertainty"):
+    with pytest.raises(ValueError, match="measurement unit is absent from evidence"):
         validate_matrix_evidence(
             ChunkStore(chunk),  # type: ignore[arg-type]
             document_id="doc-1",

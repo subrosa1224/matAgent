@@ -1,0 +1,13 @@
+material_id,formula_pretty,family,band_gap_ev,density_g_cm3,formation_energy_ev_atom,energy_above_hull_ev_atom,is_stable
+mp-2657,Li2O,oxide,4.72,2.01,-2.08,0.000,true
+mp-1265,MgO,oxide,4.45,3.58,-3.12,0.000,true
+mp-149,Si,element,0.61,2.33,-0.53,0.000,true
+mp-13,Fe,element,0.00,7.87,-0.01,0.000,true
+mp-2534,GaAs,semiconductor,0.18,5.32,-0.64,0.000,true
+mp-804,TiO2,oxide,1.78,4.24,-3.41,0.012,true
+mp-2133,ZnO,oxide,0.73,5.61,-1.62,0.006,true
+mp-2998,BaTiO3,perovskite,1.74,6.02,-3.22,0.031,true
+mp-5229,SrTiO3,perovskite,1.82,5.11,-3.34,0.018,true
+mp-19009,Al2O3,oxide,5.85,3.98,-3.51,0.000,true
+mp-11714,ZrO2,oxide,3.31,5.68,-3.08,0.024,true
+mp-2858,CeO2,oxide,2.06,7.20,-2.71,0.015,true

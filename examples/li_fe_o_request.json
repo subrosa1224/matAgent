@@ -1,0 +1,24 @@
+{
+  "required_elements": ["Li", "Fe", "O"],
+  "excluded_elements": [],
+  "chemsys": "Li-Fe-O",
+  "formula": null,
+  "band_gap_ev": {
+    "min": 0.5,
+    "max": 2.5
+  },
+  "energy_above_hull_ev_atom": {
+    "min": 0.0,
+    "max": 0.1
+  },
+  "density_g_cm3": {
+    "min": 2.0
+  },
+  "crystal_system": null,
+  "spacegroup_numbers": [],
+  "is_metal": false,
+  "is_stable": true,
+  "theoretical": false,
+  "target_band_gap_ev": 1.5,
+  "limit": 20
+}

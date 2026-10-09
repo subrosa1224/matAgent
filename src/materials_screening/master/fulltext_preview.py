@@ -99,10 +99,20 @@ def _ordinal_number(value: str) -> int:
 def _selection(task: FulltextTask) -> tuple[tuple[int, ...], bool]:
     selected = tuple(range(len(task.artifact_refs)))
     preview_only = False
+    numeral = r"[\d零〇一二三四五六七八九十两]+"
     for instruction in task.user_instructions:
+        uploaded_count = re.match(
+            rf"\s*(?:请\s*)?(?:确认|开始)\s*(?:详细分析|深度分析|分析)\s*"
+            rf"(?:已\s*)?上传的\s*({numeral})\s*篇\s*(?:全文|论文|文献|pdf)",
+            instruction,
+            re.I,
+        )
+        if uploaded_count and _ordinal_number(uploaded_count.group(1)) != len(
+            task.artifact_refs
+        ):
+            raise ValueError("确认的论文数量与当前任务附件不符，请明确选择论文。")
         if re.search(r"全部|所有|all papers", instruction, re.I):
             selected = tuple(range(len(task.artifact_refs)))
-        numeral = r"[\d零〇一二三四五六七八九十两]+"
         matches = list(
             re.finditer(
                 rf"第\s*{numeral}(?:\s*[、,，和及]\s*(?:第\s*)?{numeral})*\s*篇",

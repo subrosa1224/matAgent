@@ -1,0 +1,13 @@
+sample_id,group,temperature_c,conductivity_s_cm,constant,label
+Q01,A,800,1.20,yes,normal
+Q02,A,825,1.35,yes,normal
+Q03,A,850,1.48,yes,normal
+Q03,A,850,1.48,yes,normal
+Q04,A,875,,yes,missing-value
+Q05,A,900,1.82,yes,normal
+Q06,B,800,2.10,yes,normal
+Q07,B,825,2.28,yes,normal
+Q08,B,850,2.43,yes,normal
+Q09,B,875,2.61,yes,normal
+Q10,B,900,24.50,yes,outlier-candidate
+Q11,B,925,2.91,yes,normal

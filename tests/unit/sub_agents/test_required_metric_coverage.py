@@ -250,7 +250,10 @@ def test_cli_persists_missing_requirements_even_when_warnings_are_hidden(
         save_claims_and_links=lambda *args: None,
     )
     settings = SimpleNamespace(
-        llm_provider="intern", intern_model="fake", llm_max_output_tokens=8192
+        llm_provider="intern",
+        intern_model="fake",
+        literature_extraction_model=None,
+        llm_max_output_tokens=8192,
     )
     settings.model_copy = lambda **kwargs: settings
     monkeypatch.setattr(cli, "Settings", lambda: settings)

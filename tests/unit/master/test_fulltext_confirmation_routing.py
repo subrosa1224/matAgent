@@ -8,6 +8,7 @@ from langgraph.checkpoint.sqlite import SqliteSaver
 
 from materials_screening import unified_ui_gradio as ui
 from materials_screening.agent.conversation_store import SqliteConversationStore
+from materials_screening.master.fulltext_preview import _selection
 from materials_screening.master.fulltext_tasks import (
     new_fulltext_task,
     requests_fulltext_resume,
@@ -25,6 +26,7 @@ from tests.unit.master.test_fulltext_task_state import make_runner, seed
         "开始详细分析全部内容",
         "请确认深度分析所有内容。按原问题提取指标。",
         "确认详细分析全部内容，条件不可比时不要排名。",
+        "确认详细分析已上传的1篇全文，按原问题提取指标。",
     ],
 )
 def test_explicit_all_content_confirmation_is_a_continuation(message):
@@ -39,10 +41,22 @@ def test_explicit_all_content_confirmation_is_a_continuation(message):
         "你刚才说确认详细分析全部内容是什么意思？",
         "确认详细分析全部内容是什么意思？",
         "确认",
+        "你刚才说确认详细分析已上传的1篇全文是什么意思？",
     ],
 )
 def test_confirmation_fix_does_not_capture_unrelated_questions(message):
     assert not requests_fulltext_resume(message)
+
+
+def test_uploaded_fulltext_count_must_match_current_task(tmp_path):
+    env = setup(tmp_path, 2)
+    batch(env)
+    previewed = env.saved[-1]
+    task = previewed.model_copy(
+        update={"user_instructions": ("确认详细分析已上传的1篇全文",)}
+    )
+    with pytest.raises(ValueError, match="论文数量"):
+        _selection(task)
 
 
 @pytest.mark.parametrize("active_tasks", [0, 1, 2])
@@ -66,7 +80,10 @@ def test_ui_confirmation_requires_server_task_not_browser_artifacts(
 
 
 @pytest.mark.parametrize("stream", [False, True])
-@pytest.mark.parametrize("message", ["确认详细分析全部内容", "确认分析全部论文"])
+@pytest.mark.parametrize(
+    "message",
+    ["确认详细分析全部内容", "确认分析全部论文", "确认详细分析已上传的2篇全文"],
+)
 def test_runner_confirmation_reuses_saved_previews_without_generic_model(
     tmp_path, stream, message
 ):
